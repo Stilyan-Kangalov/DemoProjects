@@ -1,9 +1,9 @@
 # Dependency directories #
-####################
+######################
 GraphQL_App/node_modules/
 
 # Speedy-Git & ShadowGit files #
-####################
+###########################
 *.bat
 *.rb
 *.hta
