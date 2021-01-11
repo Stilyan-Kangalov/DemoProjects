@@ -30,7 +30,7 @@ IF "%option%"=="1" (
 	REM add all new files with auto-commit
 	call git add .
 	call git commit -a -m "Automated commit by Speedy_Git on %currentTime%"
-	call git push origin master
+	call git push origin main
 	echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	echo.
 	echo ### Great, everything went well. Press any key for exit.
@@ -41,13 +41,13 @@ IF "%option%"=="1" (
 	echo ### Processing your request...
 	call git add .
 	call git commit -m "!msgline!"
-	call git push origin master
+	call git push origin main
 	echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	echo.
 	echo ### Great, everything went well. Press any key for exit.
 	pause >nul
 ) ELSE IF "%option%"=="3" (
-	call git pull origin master
+	call git pull origin main
 	echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	echo.
 	echo ### Great, everything went well. Press any key for exit.
@@ -57,9 +57,9 @@ IF "%option%"=="1" (
     call git fetch upstream
     echo ### All updates are in your upstream branch. Now, press any key to trigger the merge!
     timeout /t -1
-    call git merge upstream/master
+    call git merge upstream/main
 	timeout /t 5
-	call git push origin master
+	call git push origin main
 	echo.
 	echo ### Great, everything went well. Press any key for exit.
 	pause >nul
