@@ -87,9 +87,25 @@ typings/
 .dynamodb/
 
 # Dependency directories
-GraphQL_App/node_modules/
+GraphQL_Server/node_modules/
+Demo_React/node_modules/
 
 # Speedy-Git & ShadowGit files
 *.bat
 *.rb
 *.hta
+
+# React
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+
+*.sublime*
+
+psd
+thumb
+sketch
