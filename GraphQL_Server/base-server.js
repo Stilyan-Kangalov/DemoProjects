@@ -127,7 +127,7 @@ const BookType = new GraphQLObjectType({
   const demoSchema = new GraphQLSchema({
     query: RootQueryType,
     mutation: RootMutationType
-  })
+  });
 
 app.use('/server', graphqlHTTP({
     schema: demoSchema,
